@@ -11,9 +11,6 @@ function getResult(){
     return document.getElementById("resultat").innerText;
 }
 
-function myTimeoutToRestor(result) {
-
-}
 
 //print the result
 function printResult(num){

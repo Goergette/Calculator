@@ -61,7 +61,7 @@ background-size: cover;
 /* .empty{ */
     /* background-color: lavender;  */
 /* } */
-.number,.operator,.{
+.number,.operator{
     cursor: pointer;
 }
 .operator:active, .number:active{

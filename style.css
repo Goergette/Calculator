@@ -1,23 +1,29 @@
 body{
-    background-color:rgb(37, 36, 36);
+
+background-image: url('./media/VideoCapture.jpg');
+
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
 }
 #container{
-    width: 350px;
-    height: 500px;
-    background-color: lavender;
+    width: 300px;
+    height: 550px;
+    background-color: rgb(14, 14, 15);
     margin: 0 auto;
     top: 20px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px 0  rgba(238, 234, 234, 0.5), 0 6px 20px 0 rgba(238, 234, 234, 0.5)  ;
 }
 #keyboard{
     
-    width: 342px;
-    height: 130px;
+    width: 290px;
+    height: 120px;
+    position: absolute;
     border-radius: 5px;
-    margin-top: 50px;
-    margin-bottom: 4px;
+    margin-top: 15px;
+    margin-bottom: 35px;
     margin-right: 4px;
     margin-left: 4px;
     background-color: rgb(212, 218, 219);
@@ -25,26 +31,37 @@ body{
 
 }
 #operation{
-    height: 45px;
+    height: 50px;
+    width: 285px;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 2px;
+    border:rgb(212, 218, 219) ;
+    background-color: rgb(212, 218, 219);
 }
 #resultat{
     height: 50px;
+    width: 285px;
     text-align: right;
     font-size: 40px;
+    border:rgb(212, 218, 219) ;
+    background-color: rgb(212, 218, 219);
 }
-.operator,.number, .empty{
-    width: 71px;
+#tasten{
+    margin-top: 150px;
+    position: absolute;
+    
+}
+.operator,.number{
+    width: 60px;
     height: 60px;
     margin: 6px;
     float:0 auto;
-    border-radius: 5px;
+    border-radius: 50px;
 }
-.empty{
-    background-color:lavender;
-}
-.number,.operator{
+/* .empty{ */
+    /* background-color: lavender;  */
+/* } */
+.number,.operator,.{
     cursor: pointer;
 }
 .operator:active, .number:active{
@@ -67,5 +84,5 @@ button:nth-child(2){
 }
 button:nth-child(20){
     font-size: 20px;
-    background-color:rgb(171, 195, 200);
+    background-color:rgb(228, 222, 209); 
 }

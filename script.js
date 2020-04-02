@@ -1,14 +1,14 @@
 //return a calculation
 function getOperation(){
-    return document.getElementById("operation").innerText;
+    return document.getElementById("operation").innerHTML;
 }
 // print a calculation
 function printOperation(num){
-    document.getElementById("operation").innerText=num ;
+    document.getElementById("operation"). innerHTML=num ;
 }
 //return the result
 function getResult(){
-    return document.getElementById("resultat").innerText;
+    return document.getElementById("resultat").innerHTML;
 }
 
 
@@ -16,11 +16,11 @@ function getResult(){
 function printResult(num){
     if(num == "")
     {
-        document.getElementById("resultat").innerText=num;
+        document.getElementById("resultat").innerHTML=num;
     }
     else
     {
-        document.getElementById("resultat").innerText=getFormatNumber(num);
+        document.getElementById("resultat").innerHTML=getFormatNumber(num);
     }
     
 }
@@ -69,7 +69,7 @@ for (var i=0 ; i<operator.length; i++){
                 {
                     var result = eval(operat);
                     printResult(result);
-                    printOperation(operat);
+                    printOperation("");
                      
                 }
                 else
